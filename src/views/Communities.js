@@ -15,171 +15,147 @@ import {
 import PageTitle from "../components/common/PageTitle";
 
 class Communities extends React.Component {
+
   constructor(props) {
     super(props);
 
     this.state = {
-      // First list of posts.
-      PostsListOne: [
-        {
-          backgroundImage: require("../images/content-management/1.jpeg"),
-          category: "Business",
-          categoryTheme: "dark",
-          author: "Anna Kunis",
-          authorAvatar: require("../images/avatars/1.jpg"),
-          title: "Conduct at an replied removal an amongst",
-          body:
-            "However venture pursuit he am mr cordial. Forming musical am hearing studied be luckily. But in for determine what would see...",
-          date: "28 February 2019"
-        },
-        {
-          backgroundImage: require("../images/content-management/2.jpeg"),
-          category: "Travel",
-          categoryTheme: "info",
-          author: "James Jamerson",
-          authorAvatar: require("../images/avatars/2.jpg"),
-          title: "Off tears are day blind smile alone had ready",
-          body:
-            "Is at purse tried jokes china ready decay an. Small its shy way had woody downs power. To denoting admitted speaking learning my...",
-          date: "29 February 2019"
-        },
-        {
-          backgroundImage: require("../images/content-management/3.jpeg"),
-          category: "Technology",
-          categoryTheme: "royal-blue",
-          author: "Jimmy Jackson",
-          authorAvatar: require("../images/avatars/2.jpg"),
-          title: "Difficult in delivered extensive at direction",
-          body:
-            "Is at purse tried jokes china ready decay an. Small its shy way had woody downs power. To denoting admitted speaking learning my...",
-          date: "29 February 2019"
-        },
-        {
-          backgroundImage: require("../images/content-management/4.jpeg"),
-          category: "Business",
-          categoryTheme: "warning",
-          author: "John James",
-          authorAvatar: require("../images/avatars/3.jpg"),
-          title: "It so numerous if he may outlived disposal",
-          body:
-            "How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved ready road market resolution...",
-          date: "29 February 2019"
-        }
-      ],
 
-      // Second list of posts.
-      PostsListTwo: [
-        {
-          backgroundImage: require("../images/content-management/5.jpeg"),
-          category: "Travel",
-          categoryTheme: "info",
-          author: "Anna Ken",
-          authorAvatar: require("../images/avatars/0.jpg"),
-          title:
-            "Attention he extremity unwilling on otherwise cars backwards yet",
-          body:
-            "Conviction up partiality as delightful is discovered. Yet jennings resolved disposed exertion you off. Left did fond drew fat head poor jet pan flying over...",
-          date: "29 February 2019"
-        },
-        {
-          backgroundImage: require("../images/content-management/6.jpeg"),
-          category: "Business",
-          categoryTheme: "dark",
-          author: "John James",
-          authorAvatar: require("../images/avatars/1.jpg"),
-          title:
-            "Totally words widow one downs few age every seven if miss part by fact",
-          body:
-            "Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education to admitted speaking...",
-          date: "29 February 2019"
-        }
-      ],
 
-      // Third list of posts.
       PostsListThree: [
         {
-          author: "John James",
-          authorAvatar: require("../images/avatars/1.jpg"),
-          title: "Had denoting properly jointure which well books beyond",
+          author: "Girls Who Code",
+          authorAvatar: require("../images/community_logos/index.png"),
+          title: "WE'RE BUILDING THE WORLD'S LARGEST PIPELINE OF FUTURE FEMALE ENGINEERS.",
           body:
-            "In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son. Exeter longer wisdom work...",
-          date: "29 February 2019"
+            "Girls Who Code programs work to inspire, educate, and equip girls with the computing skills to pursue 21st century opportunities. It is the most widely known community in the World for female gender developers, and helps hundreds of thousands of women to get into the education sector of computer science. The goal is to provide computer science education to more than 1 million young women by the end of year 2020.",
+          date: "29 September 2020",
+          url: "https://girlswhocode.com/"
         },
         {
-          author: "John James",
-          authorAvatar: require("../images/avatars/2.jpg"),
-          title: "Husbands ask repeated resolved but laughter debating",
+          author: "Django Girls",
+          authorAvatar: require("../images/community_logos/dgirls.png"),
+          title: "We inspire women to fall in love with programming.",
           body:
-            "It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest. Off tears...",
-          date: "29 February 2019"
-        },
-        {
-          author: "John James",
-          authorAvatar: require("../images/avatars/3.jpg"),
-          title:
-            "Instantly gentleman contained belonging exquisite now direction",
-          body:
-            "West room at sent if year. Numerous indulged distance old law you. Total state as merit court green decay he. Steepest merit checking railway...",
-          date: "29 February 2019"
-        }
-      ],
+            "Django Girls is a non-profit organization and a community that empowers and helps women to organize free, one-day programming workshops by providing tools, resources and support. We are a volunteer run organization with hundreds of people contributing to bring more amazing women into the world of technology. We are making technology more approachable by creating resources designed with empathy.",
+            date: "29 September 2020",
+            url: "https://djangogirls.org/"
 
-      // Fourth list of posts.
-      PostsListFour: [
+          },
         {
-          backgroundImage: require("../images/content-management/7.jpeg"),
-          author: "Alene Trenton",
-          authorUrl: "#",
-          category: "News",
-          categoryUrl: "#",
-          title: "Extremity so attending objection as engrossed",
+          author: "Rails Girls",
+          authorAvatar: require("../images/community_logos/rgirls.png"),
+          title:
+            "Rails Girls - Get started with tech",
           body:
-            "Pursuit chamber as elderly amongst on. Distant however warrant farther to of. My justice wishing prudent waiting in be...",
-          date: "29 February 2019"
+            "Our aim is to give tools and a community for women to understand technology and to build their ideas. We do this by providing a great experience on building things and by making technology more approachable.",
+            date: "29 September 2020",
+            url: "http://railsgirls.com/"
+
         },
         {
-          backgroundImage: require("../images/content-management/8.jpeg"),
-          author: "Chris Jamie",
-          authorUrl: "#",
-          category: "News",
-          categoryUrl: "#",
-          title: "Bed sincerity yet therefore forfeited his",
+          author: "Women Who Code",
+          authorAvatar: require("../images/community_logos/wgirls.jpeg"),
+          title:
+            "Empowering Women in Technology",
           body:
-            "Speaking throwing breeding betrayed children my to. Me marianne no he horrible produced ye. Sufficient unpleasing and...",
-          date: "29 February 2019"
+            "We are committed to ensuring that Women Who Code is an anti-racist organization and recognize the power of our platform to be a force that affects change. Until we all experience justice and equity in our daily lives, none of us can.",
+            date: "29 September 2020",
+            url: "https://www.womenwhocode.com/"
+        },
+        
+        {
+          author: "Lesbians Who Tech",
+          authorAvatar: require("../images/community_logos/lgbt1.jpeg"),
+          title:
+            "Community of Queer Women in or around tech (and the people who love them)",
+          body:
+            "The organization’s goal is to create visibility, industry inclusion, and community for these women. Lesbians Who Tech has an impressive 40,000 members and over 42 chapters worldwide. The group holds summits in various cities and hosts notable speakers, including Sheryl Sandberg who spoke in San Francisco this past March. Also worth noting: The group provides a coding scholarship and organizes Bring a Lesbian to Work Day.",
+            date: "29 September 2020",
+            url: "https://lesbianswhotech.org/"
+      },        
+        {
+          author: "LGBTQ in Technology",
+          authorAvatar: require("../images/community_logos/lgbt2.jpeg"),
+          title:
+            "The LGBTQ in Technology Slack is a space for LGBTQ people in technology to chat and support each other.",
+          body:
+            "Anybody who identifies as lesbian, gay, bisexual, trans, queer, and those questioning whether they fit into those or any of the many other sub-genres of people who are not generally considered both “straight” and cis. Friends and allies: we appreciate your support, but this space is for us.",
+            date: "29 September 2020",
+            url: "https://lgbtq.technology/"
         },
         {
-          backgroundImage: require("../images/content-management/9.jpeg"),
-          author: "Monica Jordan",
-          authorUrl: "#",
-          category: "News",
-          categoryUrl: "#",
-          title: "Object remark lively all did feebly excuse our",
+          author: "Black Girls Code",
+          authorAvatar: require("../images/community_logos/black3.png"),
+          title:
+            "Black Men Code is a fiscally sponsored, non-profit, social benefit organization.",
           body:
-            "Morning prudent removal an letters by. On could my in order never it. Or excited certain sixteen it to parties colonel not seeing...",
-          date: "29 February 2019"
+            "To increase the number of women of color in the digital space by empowering girls of color ages 7 to 17 to become innovators in STEM fields, leaders in their communities, and builders of their own futures through exposure to computer science and technology. To provide African-American youth with the skills to occupy some of the 1.4 million computing job openings expected to be available in the U.S. by 2020, and to train 1 million girls by 2040.",
+            date: "29 September 2020",
+            url: "https://www.blackgirlscode.com/"
+        },
+        
+        {
+          author: "Coding Black Females",
+          authorAvatar: require("../images/community_logos/black2.jpeg"),
+          title:
+            "Building, Supporting and Educating the community of Coding Black Females.",
+          body:
+            "Coding Black Females was created in 2017. We are a nonprofit organisation, and our primary aim is to provide opportunities for Black female developers to develop themselves, meet familiar faces, network, receive support and build relationships through having regular meetups.",
+            date: "29 September 2020",
+            url: "https://codingblackfemales.com/"
+      },        
+        {
+          author: "Out in tech",
+          authorAvatar: require("../images/community_logos/lgbt3.png"),
+          title:
+            "Built a community of 20,000 LGBTQ+ tech professionals",
+          body:
+            "Out in Tech is a nonprofit that has built a community of 20,000 LGBTQ+ tech professionals. Like many other organizations, Out in Tech holds networking events and showcases accomplished speakers to empower the LGBTQ+ community. What sets Out in Tech apart is its commitment to mentoring young LGBTQ+ people who aspire to work in tech. It also organizes a volunteer program to provide web services for LGBTQ+ activists worldwide.",
+            date: "29 September 2020",
+            url: "https://outintech.com/"
         },
         {
-          backgroundImage: require("../images/content-management/10.jpeg"),
-          author: "Monica Jordan",
-          authorUrl: "#",
-          category: "News",
-          categoryUrl: "#",
-          title: "His followed carriage proposal entrance",
+          author: "Girls Who Code",
+          authorAvatar: require("../images/community_logos/index.png"),
+          title: "WE'RE BUILDING THE WORLD'S LARGEST PIPELINE OF FUTURE FEMALE ENGINEERS.",
           body:
-            "For county now sister engage had season better had waited. Occasional mrs interested far expression directly as regard...",
-          date: "29 February 2019"
+            "Girls Who Code programs work to inspire, educate, and equip girls with the computing skills to pursue 21st century opportunities. It is the most widely known community in the World for female gender developers, and helps hundreds of thousands of women to get into the education sector of computer science. The goal is to provide computer science education to more than 1 million young women by the end of year 2020.",
+          date: "29 September 2020",
+          url: "https://girlswhocode.com/"
+        },
+        {
+          author: "Django Girls",
+          authorAvatar: require("../images/community_logos/dgirls.png"),
+          title: "We inspire women to fall in love with programming.",
+          body:
+            "Django Girls is a non-profit organization and a community that empowers and helps women to organize free, one-day programming workshops by providing tools, resources and support. We are a volunteer run organization with hundreds of people contributing to bring more amazing women into the world of technology. We are making technology more approachable by creating resources designed with empathy.",
+            date: "29 September 2020",
+            url: "https://djangogirls.org/"
+
+          },
+        {
+          author: "Rails Girls",
+          authorAvatar: require("../images/community_logos/rgirls.png"),
+          title:
+            "Rails Girls - Get started with tech",
+          body:
+            "Our aim is to give tools and a community for women to understand technology and to build their ideas. We do this by providing a great experience on building things and by making technology more approachable.",
+            date: "29 September 2020",
+            url: "http://railsgirls.com/"
+
         }
       ]
+
     };
   }
+  openURL = (url) => {
+    window.open(url);
 
+  }
   render() {
     const {
-      PostsListOne,
-      PostsListTwo,
-      PostsListThree,
-      PostsListFour
+      PostsListThree
     } = this.state;
 
     return (
@@ -188,85 +164,7 @@ class Communities extends React.Component {
         <Row noGutters className="page-header py-4">
           <PageTitle sm="4" title="Communities" subtitle="Join and excel" className="text-sm-left" />
         </Row>
-
-        {/* First Row of Posts */}
-        <Row>
-          {PostsListOne.map((post, idx) => (
-            <Col lg="3" md="6" sm="12" className="mb-4" key={idx}>
-              <Card small className="card-post card-post--1">
-                <div
-                  className="card-post__image"
-                  style={{ backgroundImage: `url(${post.backgroundImage})` }}
-                >
-                  <Badge
-                    pill
-                    className={`card-post__category bg-${post.categoryTheme}`}
-                  >
-                    {post.category}
-                  </Badge>
-                  <div className="card-post__author d-flex">
-                    <a
-                      href="#"
-                      className="card-post__author-avatar card-post__author-avatar--small"
-                      style={{ backgroundImage: `url('${post.authorAvatar}')` }}
-                    >
-                      Written by {post.author}
-                    </a>
-                  </div>
-                </div>
-                <CardBody>
-                  <h5 className="card-title">
-                    <a href="#" className="text-fiord-blue">
-                      {post.title}
-                    </a>
-                  </h5>
-                  <p className="card-text d-inline-block mb-3">{post.body}</p>
-                  <span className="text-muted">{post.date}</span>
-                </CardBody>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-
-        {/* Second Row of Posts */}
-        <Row>
-          {PostsListTwo.map((post, idx) => (
-            <Col lg="6" sm="12" className="mb-4" key={idx}>
-              <Card small className="card-post card-post--aside card-post--1">
-                <div
-                  className="card-post__image"
-                  style={{ backgroundImage: `url('${post.backgroundImage}')` }}
-                >
-                  <Badge
-                    pill
-                    className={`card-post__category bg-${post.categoryTheme}`}
-                  >
-                    {post.category}
-                  </Badge>
-                  <div className="card-post__author d-flex">
-                    <a
-                      href="#"
-                      className="card-post__author-avatar card-post__author-avatar--small"
-                      style={{ backgroundImage: `url('${post.authorAvatar}')` }}
-                    >
-                      Written by Anna Ken
-                    </a>
-                  </div>
-                </div>
-                <CardBody>
-                  <h5 className="card-title">
-                    <a className="text-fiord-blue" href="#">
-                      {post.title}
-                    </a>
-                  </h5>
-                  <p className="card-text d-inline-block mb-3">{post.body}</p>
-                  <span className="text-muted">{post.date}</span>
-                </CardBody>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-
+        <p>Wish to add a community or club? <a href="https://www.google.com">Fill it here!</a></p>
         {/* Third Row of Posts */}
         <Row>
           {PostsListThree.map((post, idx) => (
@@ -283,7 +181,6 @@ class Communities extends React.Component {
                       className="card-post__author-avatar card-post__author-avatar--small"
                       style={{ backgroundImage: `url('${post.authorAvatar}')` }}
                     >
-                      Written by James Khan
                     </a>
                     <div className="d-flex flex-column justify-content-center ml-3">
                       <span className="card-post__author-name">
@@ -293,9 +190,9 @@ class Communities extends React.Component {
                     </div>
                   </div>
                   <div className="my-auto ml-auto">
-                    <Button size="sm" theme="white">
-                      <i className="far fa-bookmark mr-1" /> Bookmark
-                    </Button>
+                    <a href={post.url} > <i className="fas fa-info mr-1" /> Learn More</a>
+                   
+         
                   </div>
                 </CardFooter>
               </Card>
@@ -303,39 +200,6 @@ class Communities extends React.Component {
           ))}
         </Row>
 
-        {/* Fourth Row of posts */}
-        <Row>
-          {PostsListFour.map((post, idx) => (
-            <Col lg="3" md="6" sm="12" className="mb-4" key={idx}>
-              <Card small className="card-post h-100">
-                <div
-                  className="card-post__image"
-                  style={{ backgroundImage: `url('${post.backgroundImage}')` }}
-                />
-                <CardBody>
-                  <h5 className="card-title">
-                    <a className="text-fiord-blue" href="#">
-                      {post.title}
-                    </a>
-                  </h5>
-                  <p className="card-text">{post.body}</p>
-                </CardBody>
-                <CardFooter className="text-muted border-top py-3">
-                  <span className="d-inline-block">
-                    By
-                    <a className="text-fiord-blue" href={post.authorUrl}>
-                      {post.author}
-                    </a>{" "}
-                    in
-                    <a className="text-fiord-blue" href={post.categoryUrl}>
-                      {post.category}
-                    </a>
-                  </span>
-                </CardFooter>
-              </Card>
-            </Col>
-          ))}
-        </Row>
       </Container>
     );
   }

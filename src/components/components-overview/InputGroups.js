@@ -18,7 +18,7 @@ const InputGroups = () => (
     <InputGroup className="mb-3">
       <FormInput value="catalin" onChange={() => {}} />
       <InputGroupAddon type="append">
-        <InputGroupText>@designrevision.com</InputGroupText>
+        <InputGroupText>WelOSS</InputGroupText>
       </InputGroupAddon>
     </InputGroup>
 

@@ -13,16 +13,16 @@ import ComponentsOverview from "./views/ComponentsOverview";
 import Tables from "./views/Tables";
 import BlogPosts from "./views/BlogPosts";
 import Communities from "./views/Communities";
-
+import Meets from "./views/Meets";
 export default [
   {
     path: "/",
     exact: true,
     layout: DefaultLayout,
-    component: () => <Redirect to="/blog-overview" />
+    component: () => <Redirect to="/explore" />
   },
   {
-    path: "/blog-overview",
+    path: "/explore",
     layout: DefaultLayout,
     component: BlogOverview
   },
@@ -35,6 +35,11 @@ export default [
     path: "/add-new-post",
     layout: DefaultLayout,
     component: AddNewPost
+  },
+  {
+    path: "/meets",
+    layout: DefaultLayout,
+    component: Meets
   },
   {
     path: "/errors",
