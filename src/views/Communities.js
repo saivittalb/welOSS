@@ -164,7 +164,8 @@ class Communities extends React.Component {
         <Row noGutters className="page-header py-4">
           <PageTitle sm="4" title="Communities" subtitle="Join and excel" className="text-sm-left" />
         </Row>
-        <p>Wish to add a community or club? <a href="https://www.google.com">Fill it here!</a></p>
+        {/* we will link google form here */}
+        <p>Wish to add a community or club? <a href="https://www.google.com">Reach here</a></p>
         {/* Third Row of Posts */}
         <Row>
           {PostsListThree.map((post, idx) => (

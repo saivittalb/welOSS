@@ -9,11 +9,11 @@ import BlogOverview from "./views/BlogOverview";
 import UserProfileLite from "./views/UserProfileLite";
 import AddNewPost from "./views/AddNewPost";
 import Errors from "./views/Errors";
-import ComponentsOverview from "./views/ComponentsOverview";
 import Tables from "./views/Tables";
 import BlogPosts from "./views/BlogPosts";
 import Communities from "./views/Communities";
 import Meets from "./views/Meets";
+import Programs from "./views/Programs";
 export default [
   {
     path: "/",
@@ -46,10 +46,15 @@ export default [
     layout: DefaultLayout,
     component: Errors
   },
+  // {
+  //   path: "/programs",
+  //   layout: DefaultLayout,
+  //   component: ComponentsOverview
+  // },
   {
-    path: "/components-overview",
+    path: "/programs",
     layout: DefaultLayout,
-    component: ComponentsOverview
+    component: Programs
   },
   {
     path: "/tables",

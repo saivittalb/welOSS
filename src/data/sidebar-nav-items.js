@@ -16,10 +16,15 @@ export default function() {
       htmlBefore: '<i class="material-icons">videocam</i>',
       to: "/meets",
     },
+    // {
+    //   title: "Programs & Opportunities",
+    //   htmlBefore: '<i class="material-icons">view_module</i>',
+    //   to: "/components-overview",
+    // },
     {
       title: "Programs & Opportunities",
       htmlBefore: '<i class="material-icons">view_module</i>',
-      to: "/components-overview",
+      to: "/programs",
     },
     {
       title: "Learn",
