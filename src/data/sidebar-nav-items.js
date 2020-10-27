@@ -12,9 +12,9 @@ export default function() {
       to: "/communities",
     },
     {
-      title: "Meets",
+      title: "Events",
       htmlBefore: '<i class="material-icons">videocam</i>',
-      to: "/meets",
+      to: "/events",
     },
     // {
     //   title: "Programs & Opportunities",

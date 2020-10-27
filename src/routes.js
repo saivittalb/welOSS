@@ -12,7 +12,7 @@ import Errors from "./views/Errors";
 import Tables from "./views/Tables";
 import BlogPosts from "./views/BlogPosts";
 import Communities from "./views/Communities";
-import Meets from "./views/Meets";
+import Events from "./views/Events";
 import Programs from "./views/Programs";
 export default [
   {
@@ -37,9 +37,9 @@ export default [
     component: AddNewPost
   },
   {
-    path: "/meets",
+    path: "/events",
     layout: DefaultLayout,
-    component: Meets
+    component: Events
   },
   {
     path: "/errors",
