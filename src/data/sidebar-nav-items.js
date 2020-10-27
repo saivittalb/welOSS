@@ -34,12 +34,12 @@ export default function() {
     {
       title: "Forum",
       htmlBefore: '<i class="material-icons">forum</i>',
-      to: "/tables",
+      to: "/forum",
     },
     {
       title: "Newsletter",
       htmlBefore: '<i class="material-icons">receipt</i>',
-      to: "/tables",
+      to: "/newsletter",
     },
     {
       title: "Blog",

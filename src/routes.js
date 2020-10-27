@@ -14,6 +14,8 @@ import BlogPosts from "./views/BlogPosts";
 import Communities from "./views/Communities";
 import Events from "./views/Events";
 import Programs from "./views/Programs";
+import Forum from "./views/Forum";
+import Newsletter from "./views/Newsletter";
 export default [
   {
     path: "/",
@@ -70,5 +72,15 @@ export default [
     path: "/communities",
     layout: DefaultLayout,
     component: Communities
+  },
+  {
+    path: "/forum",
+    layout: DefaultLayout,
+    component: Forum
+  },
+  {
+    path: "/newsletter",
+    layout: DefaultLayout,
+    component: Newsletter
   }
 ];
