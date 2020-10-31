@@ -13,24 +13,10 @@ class Newsletter extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      // Third list of posts.
-      PostsListThree: [
-        {
-          title: "welOSS Discord Server",
-          body: "Official Discord Server of welOSS",
-          active_date: "29 February 2019",
-          url: "https://discord.com"
-        }
-      ],
-
-    };
+    this.state = {};
   }
 
   render() {
-    const {
-      PostsListThree
-    } = this.state;
 
     return (
       <Container fluid className="main-content-container px-4">

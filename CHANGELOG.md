@@ -1,6 +1,6 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [1.0.0] - 2019-01-07
+## [1.0.0] - 2020-10-31
 
-- Initial release.
+- Initial mock release.

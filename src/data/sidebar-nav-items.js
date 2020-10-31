@@ -1,8 +1,14 @@
 export default function() {
   return [
     {
-      title: "Explore",
-      to: "/explore",
+      title: "Explore by Language",
+      to: "/explore-lang",
+      htmlBefore: '<i class="material-icons">explore</i>',
+      htmlAfter: ""
+    },
+    {
+      title: "Explore by Repository",
+      to: "/explore-repo",
       htmlBefore: '<i class="material-icons">explore</i>',
       htmlAfter: ""
     },
@@ -16,11 +22,6 @@ export default function() {
       htmlBefore: '<i class="material-icons">videocam</i>',
       to: "/events",
     },
-    // {
-    //   title: "Programs & Opportunities",
-    //   htmlBefore: '<i class="material-icons">view_module</i>',
-    //   to: "/components-overview",
-    // },
     {
       title: "Programs & Opportunities",
       htmlBefore: '<i class="material-icons">view_module</i>',
@@ -29,7 +30,7 @@ export default function() {
     {
       title: "Learn",
       htmlBefore: '<i class="material-icons">library_books</i>',
-      to: "/tables",
+      to: "/learn",
     },
     {
       title: "Forum",
@@ -49,7 +50,7 @@ export default function() {
     {
       title: "Profile",
       htmlBefore: '<i class="material-icons">person</i>',
-      to: "/user-profile-lite",
+      to: "/user-profile",
     }
     // {
     //   title: "Errors",

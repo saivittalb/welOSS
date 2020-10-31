@@ -55,7 +55,7 @@ class Events extends React.Component {
           <PageTitle sm="4" title="Open Source Events" subtitle="Tuesday, 27th October, 7:10 PM, 2020" className="text-sm-left" />
         </Row>
        {/* we will link google form here */}
-       <p>Wish to add an OSS Meet or an online event? <a href="https://www.google.com">Reach here</a></p>
+       <p>Wish to add an OSS Meet or an online event? <a href="/">Reach here</a></p>
 
         {/* Fourth Row of posts */}
         <Row>
@@ -64,7 +64,7 @@ class Events extends React.Component {
               <Card small className="card-post h-10">
                 <CardBody>
                   <h5 className="card-title">
-                    <a className="text-fiord-blue" href="#">
+                    <a className="text-fiord-blue" href="/">
                       {post.title}
                     </a>
                   </h5>

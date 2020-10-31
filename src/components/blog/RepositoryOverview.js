@@ -5,7 +5,7 @@ import { Row, Col, Card, CardHeader, CardBody, Button } from "shards-react";
 import RangeDatePicker from "../common/RangeDatePicker";
 import Chart from "../../utils/chart";
 
-class UsersOverview extends React.Component {
+class RepositoryOverview extends React.Component {
   constructor(props) {
     super(props);
 
@@ -117,7 +117,7 @@ class UsersOverview extends React.Component {
   }
 }
 
-UsersOverview.propTypes = {
+RepositoryOverview.propTypes = {
   /**
    * The component's title.
    */
@@ -132,8 +132,8 @@ UsersOverview.propTypes = {
   chartOptions: PropTypes.object
 };
 
-UsersOverview.defaultProps = {
-  title: "Users Overview",
+RepositoryOverview.defaultProps = {
+  title: "Repository Growth",
   chartData: {
     labels: Array.from(new Array(30), (_, i) => (i === 0 ? 1 : i)),
     datasets: [
@@ -229,4 +229,4 @@ UsersOverview.defaultProps = {
   }
 };
 
-export default UsersOverview;
+export default RepositoryOverview;

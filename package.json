@@ -1,5 +1,5 @@
 {
-  "name": "shards-dashboard-lite-react",
+  "name": "weloss-frontend",
   "version": "1.0.0",
   "private": true,
   "homepage": "./",
@@ -19,6 +19,10 @@
     "react-scripts": "2.1.1",
     "shards-react": "^1.0.0",
     "shortid": "^2.2.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saivittalb/weloss-frontend.git"
   },
   "scripts": {
     "start": "react-scripts start",

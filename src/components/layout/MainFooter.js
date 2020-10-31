@@ -39,14 +39,10 @@ MainFooter.propTypes = {
 
 MainFooter.defaultProps = {
   contained: false,
-  copyright: "Copyright © 2020 WelOSS",
+  copyright: "Copyright © 2020 welOSS. All rights reserved.",
   menuItems: [
     {
       title: "Home",
-      to: "#"
-    },
-    {
-      title: "Services",
       to: "#"
     },
     {
@@ -54,11 +50,15 @@ MainFooter.defaultProps = {
       to: "#"
     },
     {
-      title: "Products",
+      title: "Privacy Policy",
       to: "#"
     },
     {
-      title: "Blog",
+      title: "Terms of Use",
+      to: "#"
+    },
+    {
+      title: "Attribution",
       to: "#"
     }
   ]

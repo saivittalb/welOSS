@@ -2,19 +2,19 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Container, Row, Col } from "shards-react";
 
-import PageTitle from "./../components/common/PageTitle";
-import SmallStats from "./../components/common/SmallStats";
-import UsersOverview from "./../components/blog/UsersOverview";
-import UsersByDevice from "./../components/blog/UsersByDevice";
-import NewDraft from "./../components/blog/NewDraft";
-import Discussions from "./../components/blog/Discussions";
-import TopReferrals from "./../components/common/TopReferrals";
+import PageTitle from "../components/common/PageTitle";
+import SmallStats from "../components/common/SmallStats";
+import RepositoryOverview from "../components/blog/RepositoryOverview";
+import LangsInRepo from "../components/blog/LangsInRepo";
+import NewDraft from "../components/blog/NewDraft";
+import RepoDiscussions from "../components/blog/RepoDiscussions";
+import SuggestedRepositories from "../components/common/SuggestedRepositories";
 
-const BlogOverview = ({ smallStats }) => (
+const ExploreLang = ({ smallStats }) => (
   <Container fluid className="main-content-container px-4">
     {/* Page Header */}
     <Row noGutters className="page-header py-4">
-      <PageTitle title="Blog Overview" subtitle="Dashboard" className="text-sm-left mb-3" />
+      <PageTitle title="Explore by Repository" subtitle="Search repository: 'Example Project'" className="text-sm-left mb-3" />
     </Row>
 
     {/* Small Stats Blocks */}
@@ -39,12 +39,12 @@ const BlogOverview = ({ smallStats }) => (
     <Row>
       {/* Users Overview */}
       <Col lg="8" md="12" sm="12" className="mb-4">
-        <UsersOverview />
+        <RepositoryOverview />
       </Col>
 
       {/* Users by Device */}
       <Col lg="4" md="6" sm="12" className="mb-4">
-        <UsersByDevice />
+        <LangsInRepo />
       </Col>
 
       {/* New Draft */}
@@ -54,30 +54,30 @@ const BlogOverview = ({ smallStats }) => (
 
       {/* Discussions */}
       <Col lg="5" md="12" sm="12" className="mb-4">
-        <Discussions />
+        <RepoDiscussions />
       </Col>
 
       {/* Top Referrals */}
       <Col lg="3" md="12" sm="12" className="mb-4">
-        <TopReferrals />
+        <SuggestedRepositories />
       </Col>
     </Row>
   </Container>
 );
 
-BlogOverview.propTypes = {
+ExploreLang.propTypes = {
   /**
    * The small stats dataset.
    */
   smallStats: PropTypes.array
 };
 
-BlogOverview.defaultProps = {
+ExploreLang.defaultProps = {
   smallStats: [
     {
-      label: "Posts",
-      value: "2,390",
-      percentage: "4.7%",
+      label: "Contributors",
+      value: "14",
+      percentage: "0.7%",
       increase: true,
       chartLabels: [null, null, null, null, null, null, null],
       attrs: { md: "6", sm: "6" },
@@ -93,9 +93,9 @@ BlogOverview.defaultProps = {
       ]
     },
     {
-      label: "Pages",
+      label: "Issues",
       value: "182",
-      percentage: "12.4",
+      percentage: "2.4%",
       increase: true,
       chartLabels: [null, null, null, null, null, null, null],
       attrs: { md: "6", sm: "6" },
@@ -111,11 +111,11 @@ BlogOverview.defaultProps = {
       ]
     },
     {
-      label: "Comments",
-      value: "8,147",
-      percentage: "3.8%",
-      increase: false,
-      decrease: true,
+      label: "Releases",
+      value: "8",
+      percentage: "1%",
+      increase: true,
+      decrease: false,
       chartLabels: [null, null, null, null, null, null, null],
       attrs: { md: "4", sm: "6" },
       datasets: [
@@ -130,9 +130,9 @@ BlogOverview.defaultProps = {
       ]
     },
     {
-      label: "New Customers",
+      label: "Pull Requests",
       value: "29",
-      percentage: "2.71%",
+      percentage: "7.1%",
       increase: false,
       decrease: true,
       chartLabels: [null, null, null, null, null, null, null],
@@ -149,11 +149,11 @@ BlogOverview.defaultProps = {
       ]
     },
     {
-      label: "Subscribers",
-      value: "17,281",
-      percentage: "2.4%",
-      increase: false,
-      decrease: true,
+      label: "Stars",
+      value: "728",
+      percentage: "4.2%",
+      increase: true,
+      decrease: false,
       chartLabels: [null, null, null, null, null, null, null],
       attrs: { md: "4", sm: "6" },
       datasets: [
@@ -170,4 +170,4 @@ BlogOverview.defaultProps = {
   ]
 };
 
-export default BlogOverview;
+export default ExploreLang;

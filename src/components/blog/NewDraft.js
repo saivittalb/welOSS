@@ -27,13 +27,13 @@ const NewDraft = ({ title }) => (
 
         {/* Body */}
         <FormGroup>
-          <FormTextarea placeholder="Words can be like X-rays if you use them properly..." />
+          <FormTextarea placeholder="Words can be like X-rays if you use them properly... All your messages will be saved in your profile so that you can access in future." />
         </FormGroup>
 
         {/* Create Draft */}
         <FormGroup className="mb-0">
           <Button theme="accent" type="submit">
-            Create Draft
+            Save Message
           </Button>
         </FormGroup>
       </Form>
@@ -49,7 +49,7 @@ NewDraft.propTypes = {
 };
 
 NewDraft.defaultProps = {
-  title: "New Draft"
+  title: "Save your thoughts"
 };
 
 export default NewDraft;

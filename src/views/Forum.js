@@ -22,7 +22,7 @@ class Forum extends React.Component {
         {
           title: "welOSS Discord Server",
           body: "Official Discord Server of welOSS",
-          active_date: "29 February 2019",
+          active_date: "31 October 2020",
           url: "https://discord.com"
         }
       ],

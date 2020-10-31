@@ -32,7 +32,7 @@ const UserAccountDetails = ({ title }) => (
                   <FormInput
                     id="feFirstName"
                     placeholder="First Name"
-                    value="Sierra"
+                    value="Demo"
                     onChange={() => {}}
                   />
                 </Col>
@@ -42,7 +42,7 @@ const UserAccountDetails = ({ title }) => (
                   <FormInput
                     id="feLastName"
                     placeholder="Last Name"
-                    value="Brooks"
+                    value="User"
                     onChange={() => {}}
                   />
                 </Col>
@@ -55,7 +55,7 @@ const UserAccountDetails = ({ title }) => (
                     type="email"
                     id="feEmail"
                     placeholder="Email Address"
-                    value="sierra@example.com"
+                    value="demo@example.com"
                     onChange={() => {}}
                     autoComplete="email"
                   />
@@ -74,11 +74,11 @@ const UserAccountDetails = ({ title }) => (
                 </Col>
               </Row>
               <FormGroup>
-                <label htmlFor="feAddress">Address</label>
+                <label htmlFor="feInterests">Interests</label>
                 <FormInput
                   id="feAddress"
                   placeholder="Address"
-                  value="1234 Main St."
+                  value="Java, C, HTML/CSS, JS"
                   onChange={() => {}}
                 />
               </FormGroup>
@@ -94,7 +94,7 @@ const UserAccountDetails = ({ title }) => (
                 </Col>
                 {/* State */}
                 <Col md="4" className="form-group">
-                  <label htmlFor="feInputState">State</label>
+                  <label htmlFor="feInputState">Country</label>
                   <FormSelect id="feInputState">
                     <option>Choose...</option>
                     <option>...</option>

@@ -12,7 +12,7 @@ import {
   FormSelect
 } from "shards-react";
 
-const TopReferrals = ({ title, referralData }) => (
+const SuggestedRepositories = ({ title, referralData }) => (
   <Card small>
     <CardHeader className="border-bottom">
       <h6 className="m-0">{title}</h6>
@@ -59,7 +59,7 @@ const TopReferrals = ({ title, referralData }) => (
   </Card>
 );
 
-TopReferrals.propTypes = {
+SuggestedRepositories.propTypes = {
   /**
    * The component's title.
    */
@@ -70,42 +70,42 @@ TopReferrals.propTypes = {
   referralData: PropTypes.array
 };
 
-TopReferrals.defaultProps = {
-  title: "Top Referrals",
+SuggestedRepositories.defaultProps = {
+  title: "Suggested Repositories that match your profile",
   referralData: [
     {
-      title: "GitHub",
-      value: "19,291"
+      title: "Example Project - 1",
+      value: "99.4%"
     },
     {
-      title: "Stack Overflow",
-      value: "11,201"
+      title: "Example Project - 2",
+      value: "98.2%"
     },
     {
-      title: "Hacker News",
-      value: "9,291"
+      title: "Example Project - 3",
+      value: "94.7%"
     },
     {
-      title: "Reddit",
-      value: "8,281"
+      title: "Example Project - 4",
+      value: "83.4%"
     },
     {
-      title: "The Next Web",
-      value: "7,128"
+      title: "Example Project - 5",
+      value: "71%"
     },
     {
-      title: "Tech Crunch",
-      value: "6,218"
+      title: "Example Project - 6",
+      value: "67.7%"
     },
     {
-      title: "YouTube",
-      value: "1,218"
+      title: "Example Project - 7",
+      value: "65.2%"
     },
     {
-      title: "Adobe",
-      value: "1,171"
+      title: "Example Project - 8",
+      value: "55%"
     }
   ]
 };
 
-export default TopReferrals;
+export default SuggestedRepositories;

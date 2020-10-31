@@ -39,30 +39,29 @@ export default class Notifications extends React.Component {
           <DropdownItem>
             <div className="notification__icon-wrapper">
               <div className="notification__icon">
-                <i className="material-icons">&#xE6E1;</i>
+                <i className="material-icons">&#xe853;</i>
               </div>
             </div>
             <div className="notification__content">
-              <span className="notification__category">Analytics</span>
+              <span className="notification__category">Account</span>
               <p>
-                Your website’s active users count increased by{" "}
-                <span className="text-success text-semibold">28%</span> in the
-                last week. Great job!
+                <span className="text-success text-semibold">@demouser</span> started following you and you both share these common interests:
+                <span className="text-success text-semibold"> Java, C</span>!
               </p>
             </div>
           </DropdownItem>
           <DropdownItem>
             <div className="notification__icon-wrapper">
               <div className="notification__icon">
-                <i className="material-icons">&#xE8D1;</i>
+                <i className="material-icons">&#xE6E1;</i>
               </div>
             </div>
             <div className="notification__content">
-              <span className="notification__category">Sales</span>
+              <span className="notification__category">Reputation</span>
               <p>
-                Last week your store’s sales count decreased by{" "}
-                <span className="text-danger text-semibold">5.52%</span>. It
-                could have been worse!
+                Last week your reputation decreased by{" "}
+                <span className="text-danger text-semibold">1.52%</span> due to 
+                low quality commits reported by project maintainers.
               </p>
             </div>
           </DropdownItem>

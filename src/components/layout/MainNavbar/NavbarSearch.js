@@ -17,7 +17,7 @@ export default () => (
       </InputGroupAddon>
       <FormInput
         className="navbar-search"
-        placeholder="Search for something..."
+        placeholder="Search for repos, projects, users, languages...  Use prefix 'learn' to access resources and learn"
       />
     </InputGroup>
   </Form>

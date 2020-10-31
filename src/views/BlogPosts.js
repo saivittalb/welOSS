@@ -29,6 +29,15 @@ class BlogPosts extends React.Component {
           url: "https://medium.com/@kmehant/my-google-code-in-grand-prize-trip-experience-9dfce42909e5"
         },
         {
+          author: "Sai Vittal B",
+          authorAvatar: require("../images/avatars/1.jpg"),
+          title: "Introduction to MongoDB",
+          body:
+            "MongoDB is an open-source NoSQL-Database developed by 10gen(now MongoDB, Inc.] in C++. NoSQL is a new trend in database development and refers generally to databases without fixed schema. Such databases...",
+          date: "29 October 2018",
+          url: "https://medium.com/@kmehant/my-google-code-in-grand-prize-trip-experience-9dfce42909e5"
+        },
+        {
           author: "Mehant Kammakomati",
           authorAvatar: require("../images/avatars/2.jpg"),
           title: "All about Kute, an amazing project under SCoRe",
@@ -94,7 +103,7 @@ class BlogPosts extends React.Component {
           <PageTitle sm="4" title="Blog Posts" subtitle="Read and get inspired" className="text-sm-left" />
         </Row>
         {/* we will link google form here */}
-        <p>Wish to add a blog to help FOSS community? <a href="https://www.google.com">Reach here</a></p>
+        <p>Wish to add a blog to help FOSS community? <a href="/">Reach here</a></p>
 
         {/* Third Row of Posts */}
         <Row>

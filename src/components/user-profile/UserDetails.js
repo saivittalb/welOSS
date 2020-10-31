@@ -44,11 +44,22 @@ const UserDetails = ({ userDetails }) => (
       </ListGroupItem>
       <ListGroupItem className="p-4">
         <strong className="text-muted d-block mb-2">
-          {userDetails.metaTitle}
+          {userDetails.followersTitle}
         </strong>
-        <span>{userDetails.metaValue}</span>
+        <span>{userDetails.followersValue}</span>
+        <strong className="text-muted d-block mb-2">
+          <br></br>
+          {userDetails.followingTitle}
+        </strong>
+        <span>{userDetails.followingValue}</span>
       </ListGroupItem>
     </ListGroup>
+    <ListGroupItem className="p-4">
+      <strong className="text-muted d-block mb-2">
+        {userDetails.metaTitle}
+        </strong>
+      <span>{userDetails.metaValue}</span>
+    </ListGroupItem>
   </Card>
 );
 
@@ -61,14 +72,18 @@ UserDetails.propTypes = {
 
 UserDetails.defaultProps = {
   userDetails: {
-    name: "Sierra Brooks",
+    name: "Demo User",
     avatar: require("./../../images/avatars/0.jpg"),
-    jobTitle: "Project Manager",
-    performanceReportTitle: "Workload",
+    jobTitle: "Software Developer",
+    performanceReportTitle: "Reputation",
     performanceReportValue: 74,
+    followersTitle: "Followers",
+    followersValue: 500,
+    followingTitle: "Following",
+    followingValue: 500,
     metaTitle: "Description",
     metaValue:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque, quidem, commodi soluta qui quae minima obcaecati quod dolorum sint alias, possimus illum assumenda eligendi cumque?"
+      "Software Developer at Example, Inc with strong predilection for FOSS."
   }
 };
 

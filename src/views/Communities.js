@@ -7,9 +7,7 @@ import {
   Col,
   Card,
   CardBody,
-  CardFooter,
-  Badge,
-  Button
+  CardFooter
 } from "shards-react";
 
 import PageTitle from "../components/common/PageTitle";
@@ -114,36 +112,6 @@ class Communities extends React.Component {
             "Out in Tech is a nonprofit that has built a community of 20,000 LGBTQ+ tech professionals. Like many other organizations, Out in Tech holds networking events and showcases accomplished speakers to empower the LGBTQ+ community. What sets Out in Tech apart is its commitment to mentoring young LGBTQ+ people who aspire to work in tech. It also organizes a volunteer program to provide web services for LGBTQ+ activists worldwide.",
             date: "29 September 2020",
             url: "https://outintech.com/"
-        },
-        {
-          author: "Girls Who Code",
-          authorAvatar: require("../images/community_logos/index.png"),
-          title: "WE'RE BUILDING THE WORLD'S LARGEST PIPELINE OF FUTURE FEMALE ENGINEERS.",
-          body:
-            "Girls Who Code programs work to inspire, educate, and equip girls with the computing skills to pursue 21st century opportunities. It is the most widely known community in the World for female gender developers, and helps hundreds of thousands of women to get into the education sector of computer science. The goal is to provide computer science education to more than 1 million young women by the end of year 2020.",
-          date: "29 September 2020",
-          url: "https://girlswhocode.com/"
-        },
-        {
-          author: "Django Girls",
-          authorAvatar: require("../images/community_logos/dgirls.png"),
-          title: "We inspire women to fall in love with programming.",
-          body:
-            "Django Girls is a non-profit organization and a community that empowers and helps women to organize free, one-day programming workshops by providing tools, resources and support. We are a volunteer run organization with hundreds of people contributing to bring more amazing women into the world of technology. We are making technology more approachable by creating resources designed with empathy.",
-            date: "29 September 2020",
-            url: "https://djangogirls.org/"
-
-          },
-        {
-          author: "Rails Girls",
-          authorAvatar: require("../images/community_logos/rgirls.png"),
-          title:
-            "Rails Girls - Get started with tech",
-          body:
-            "Our aim is to give tools and a community for women to understand technology and to build their ideas. We do this by providing a great experience on building things and by making technology more approachable.",
-            date: "29 September 2020",
-            url: "http://railsgirls.com/"
-
         }
       ]
 

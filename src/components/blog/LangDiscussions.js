@@ -5,13 +5,12 @@ import {
   CardHeader,
   CardBody,
   CardFooter,
-  ButtonGroup,
   Button,
   Row,
   Col
 } from "shards-react";
 
-const Discussions = ({ title, discussions }) => (
+const LangDiscussions = ({ title, discussions }) => (
   <Card small className="blog-comments">
     <CardHeader className="border-bottom">
       <h6 className="m-0">{title}</h6>
@@ -42,29 +41,6 @@ const Discussions = ({ title, discussions }) => (
             {/* Content :: Body */}
             <p className="m-0 my-1 mb-2 text-muted">{discussion.body}</p>
 
-            {/* Content :: Actions */}
-            <div className="blog-comments__actions">
-              <ButtonGroup size="sm">
-                <Button theme="white">
-                  <span className="text-success">
-                    <i className="material-icons">check</i>
-                  </span>{" "}
-                  Approve
-                </Button>
-                <Button theme="white">
-                  <span className="text-danger">
-                    <i className="material-icons">clear</i>
-                  </span>{" "}
-                  Reject
-                </Button>
-                <Button theme="white">
-                  <span className="text-light">
-                    <i className="material-icons">more_vert</i>
-                  </span>{" "}
-                  Edit
-                </Button>
-              </ButtonGroup>
-            </div>
           </div>
         </div>
       ))}
@@ -82,7 +58,7 @@ const Discussions = ({ title, discussions }) => (
   </Card>
 );
 
-Discussions.propTypes = {
+LangDiscussions.propTypes = {
   /**
    * The component's title.
    */
@@ -93,8 +69,8 @@ Discussions.propTypes = {
   discussions: PropTypes.array
 };
 
-Discussions.defaultProps = {
-  title: "Discussions",
+LangDiscussions.defaultProps = {
+  title: "Language Discussions",
   discussions: [
     {
       id: 1,
@@ -141,4 +117,4 @@ Discussions.defaultProps = {
   ]
 };
 
-export default Discussions;
+export default LangDiscussions;

@@ -5,11 +5,12 @@ import { Redirect } from "react-router-dom";
 import { DefaultLayout } from "./layouts";
 
 // Route Views
-import BlogOverview from "./views/BlogOverview";
-import UserProfileLite from "./views/UserProfileLite";
+import ExploreLang from "./views/ExploreLang";
+import ExploreRepo from "./views/ExploreRepo";
+import UserProfile from "./views/UserProfile";
 import AddNewPost from "./views/AddNewPost";
 import Errors from "./views/Errors";
-import Tables from "./views/Tables";
+import Learn from "./views/Learn";
 import BlogPosts from "./views/BlogPosts";
 import Communities from "./views/Communities";
 import Events from "./views/Events";
@@ -21,17 +22,22 @@ export default [
     path: "/",
     exact: true,
     layout: DefaultLayout,
-    component: () => <Redirect to="/explore" />
+    component: () => <Redirect to="/explore-lang" />
   },
   {
-    path: "/explore",
+    path: "/explore-lang",
     layout: DefaultLayout,
-    component: BlogOverview
+    component: ExploreLang
   },
   {
-    path: "/user-profile-lite",
+    path: "/explore-repo",
     layout: DefaultLayout,
-    component: UserProfileLite
+    component: ExploreRepo
+  },
+  {
+    path: "/user-profile",
+    layout: DefaultLayout,
+    component: UserProfile
   },
   {
     path: "/add-new-post",
@@ -59,9 +65,9 @@ export default [
     component: Programs
   },
   {
-    path: "/tables",
+    path: "/learn",
     layout: DefaultLayout,
-    component: Tables
+    component: Learn
   },
   {
     path: "/blog-posts",

@@ -12,7 +12,7 @@ import {
 
 import Chart from "../../utils/chart";
 
-class UsersByDevice extends React.Component {
+class LangsInRepo extends React.Component {
   constructor(props) {
     super(props);
 
@@ -86,7 +86,7 @@ class UsersByDevice extends React.Component {
   }
 }
 
-UsersByDevice.propTypes = {
+LangsInRepo.propTypes = {
   /**
    * The component's title.
    */
@@ -105,8 +105,8 @@ UsersByDevice.propTypes = {
   chartData: PropTypes.object
 };
 
-UsersByDevice.defaultProps = {
-  title: "Users by device",
+LangsInRepo.defaultProps = {
+  title: "Languages Used",
   chartData: {
     datasets: [
       {
@@ -119,8 +119,8 @@ UsersByDevice.defaultProps = {
         ]
       }
     ],
-    labels: ["Desktop", "Tablet", "Mobile"]
+    labels: ["SCSS", "JavaScript", "Other"]
   }
 };
 
-export default UsersByDevice;
+export default LangsInRepo;
