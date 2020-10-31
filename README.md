@@ -1,4 +1,5 @@
 # welOSS React Website
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dcf381fe-b008-487f-b789-4866485a55c5/deploy-status)](https://app.netlify.com/sites/weloss/deploys)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com) 
 [![GitHub followers](https://img.shields.io/github/followers/saivittalb.svg?style=social&label=Follow)](https://github.com/saivittalb?tab=followers) 
